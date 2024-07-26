@@ -8,7 +8,7 @@ const Header: React.FC = () => {
   const menuAnimation = useSpring({
     transform: isOpen ? "translateX(0%)" : "translateX(100%)",
     config: {
-      duration: 300,
+      duration: 200,
     }
   })
 
