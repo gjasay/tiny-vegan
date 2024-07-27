@@ -10,14 +10,13 @@ const slideImages = [
   "./food6.jpg",
 ];
 
-const Hero = () =>
-{
+const Hero = () => {
   return (
     <div
       id="hero"
       className="flex flex-col justify-around items-center text-center h-screen bg-cover bg-center mt-6 py-8 pb-16 md:flex-row md:justify-between md:px-20"
     >
-      <div className="flex flex-col justify-center items-center text-center ">
+      <div className="flex flex-col justify-center items-center text-center mt-24 md:mt-0">
         <h2 className="italic text-xl py-4 md:text-3xl">
           enjoy the lentil things
         </h2>
@@ -30,7 +29,7 @@ const Hero = () =>
         </div>
       </div>
 
-      <button className="sm:flex md:hidden bg-amber-200 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2 ">
+      <button className="sm:flex md:hidden bg-amber-200 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2">
         Order Now
       </button>
 
@@ -54,10 +53,7 @@ const Hero = () =>
             Order Now
           </button>
         </div>
-
       </div>
-
-
     </div>
   );
 };
