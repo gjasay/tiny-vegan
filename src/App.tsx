@@ -59,7 +59,7 @@ function App() {
   });
 
   return (
-    <div className="bg-green-300">
+    <div className="bg-lime-600 text-white">
       <Header />
       <animated.div ref={heroRef} style={heroAnimation}>
         <Hero />

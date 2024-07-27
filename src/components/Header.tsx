@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   });
 
   return (
-    <header className="sticky top-0 left-0 w-full flex justify-center bg-amber-200 flex-col sm:h-24 z-30 border-black border-b-2 rounded-sm">
+    <header className="sticky top-0 left-0 w-full flex justify-center bg-amber-300 text-black flex-col sm:h-24 z-30 border-black border-b-2 rounded-sm">
       {/* Mobile */}
       <div className="flex justify-between items-center px-6 py-3 md:hidden z-30">
           <a href=""><img src="./logo.png" className="w-36"/></a>

@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <button className="sm:flex md:hidden bg-amber-200 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2">
+      <button className="sm:flex md:hidden text-black bg-amber-300 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2">
         Order Now
       </button>
 
@@ -49,7 +49,7 @@ const Hero = () => {
           ))}
         </Slide>
         <div className="w-full flex justify-center">
-          <button className="hidden sm:hidden md:block lg:block xl:block bg-amber-200 hover:bg-green-500 rounded-full font-light border-black border-2 my-6 w-48 h-14 text-xl">
+          <button className="hidden sm:hidden md:block lg:block xl:block bg-amber-300 text-black hover:bg-green-500 rounded-full font-light border-black border-2 my-6 w-48 h-14 text-xl">
             Order Now
           </button>
         </div>
