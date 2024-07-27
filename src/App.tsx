@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import Hours from "./components/Hours";
+import About from "./components/About";
 
 function useIntersectionObserver(): [MutableRefObject<null>, boolean] {
   const [inView, setInView] = useState(false);
@@ -35,6 +36,7 @@ function App() {
   const [heroRef, heroInView] = useIntersectionObserver();
   const [menuRef, menuInView] = useIntersectionObserver();
   const [hoursRef, hoursInView] = useIntersectionObserver();
+  const [aboutRef, aboutInView] = useIntersectionObserver();
 
   const heroAnimation = useSpring({
     opacity: heroInView ? 1 : 0,
@@ -51,6 +53,11 @@ function App() {
     transform: hoursInView ? "translateY(0)" : "translateY(50px)",
   });
 
+  const aboutAnimation = useSpring({
+    opacity: aboutInView ? 1 : 0,
+    transform: aboutInView ? "translateY(0)" : "translateY(50px)",
+  });
+
   return (
     <div className="bg-green-300">
       <Header />
@@ -62,6 +69,9 @@ function App() {
       </animated.div>
       <animated.div ref={hoursRef} style={hoursAnimation}>
         <Hours />
+      </animated.div>
+      <animated.div ref={aboutRef} style={aboutAnimation}>
+        <About />
       </animated.div>
     </div>
   );
