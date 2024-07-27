@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   });
 
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-center bg-green-200 flex-col py-4 z-30">
+    <header className="sticky top-0 left-0 w-full flex justify-center bg-green-200 flex-col py-4 z-30">
       {/* Mobile */}
       <div className="flex justify-between items-center px-6 py-3 md:hidden z-30">
         <h1 className="text-4xl font-bold text-green-600">
@@ -27,6 +27,7 @@ const Header: React.FC = () => {
         style={menuAnimation}
         className="fixed top-0 right-0 h-full w-full text-5xl bg-amber-200 shadow-lg flex flex-col justify-around py-4 md:hidden z-20"
       >
+        <div></div>
         <li className="text-center px-4 py-8">
           <a
             onClick={() => setOpen(!isOpen)}
