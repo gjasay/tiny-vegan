@@ -15,12 +15,10 @@ const Header: React.FC = () => {
   });
 
   return (
-    <header className="sticky top-0 left-0 w-full flex justify-center bg-green-200 flex-col py-4 z-30">
+    <header className="sticky top-0 left-0 w-full flex justify-center bg-amber-200 flex-col sm:h-24 z-30">
       {/* Mobile */}
       <div className="flex justify-between items-center px-6 py-3 md:hidden z-30">
-        <h1 className="text-4xl font-bold text-green-600">
-          <a href="">Tiny Vegan</a>
-        </h1>
+          <a href=""><img src="./logo.png" className="w-36"/></a>
         <Twirl toggled={isOpen} toggle={setOpen} />
       </div>
       <animated.ul
@@ -68,11 +66,9 @@ const Header: React.FC = () => {
         </li>
       </animated.ul>
       {/* Desktop */}
-      <div className="hidden md:flex flex-col justify-center py-4">
-        <h1 className="text-4xl font-bold text-center text-green-500 pb-4">
-          <a href="">Tiny Vegan</a>
-        </h1>
-        <ul className="flex flex-row justify-center">
+      <div className="hidden md:flex flex-col justify-center items-center py-4">
+        <a href=""><img src="./logo.png" className="w-36"/></a>
+        <ul className="flex flex-row justify-center items-start">
           <li className="text-2xl text-center px-4">
             <a href="#menu">menu</a>
           </li>

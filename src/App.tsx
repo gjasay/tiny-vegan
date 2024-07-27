@@ -13,7 +13,6 @@ function useIntersectionObserver(): [MutableRefObject<null>, boolean] {
     const observer = new IntersectionObserver(
       ([entry]) => {
         setInView(entry.isIntersecting);
-        console.log(`Component in view: ${entry.isIntersecting}`);
       },
       { threshold: 0.5 },
     );
@@ -53,7 +52,7 @@ function App() {
   });
 
   return (
-    <div className="bg-green-100">
+    <div className="bg-green-300">
       <Header />
       <animated.div ref={heroRef} style={heroAnimation}>
         <Hero />

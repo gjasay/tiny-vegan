@@ -29,7 +29,7 @@ const Hero = () => {
               <img
                 src={each}
                 alt="food"
-                className="rounded-3xl border-black border-2"
+                className="mx-4 rounded-3xl border-black border-2"
                 style={{ width: "300px", height: "200px", objectFit: "cover" }}
               />
             </div>

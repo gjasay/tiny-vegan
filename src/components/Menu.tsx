@@ -1,5 +1,4 @@
 const Menu = () => {
-  console.log("Menu component rendered");
   return (
     <div
       id="menu"
