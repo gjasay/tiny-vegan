@@ -10,27 +10,31 @@ const slideImages = [
   "./food6.jpg",
 ];
 
-const Hero = () => {
+const Hero = () =>
+{
   return (
     <div
       id="hero"
       className="flex flex-col justify-around items-center text-center h-screen bg-cover bg-center mt-6 py-8 pb-16 md:flex-row md:justify-between md:px-20"
     >
-      <h2 className="italic text-xl py-4 rounded-md md:text-3xl">
-        enjoy the lentil things
-      </h2>
-      <div className="w-3/4 md:w-1/2 md:ml-10 lg:w-1/3 flex-shrink-0">
-        <img
-          src="./store-front.jpg"
-          alt="store front"
-          className="rounded-3xl border-black border-2 max-w-full h-auto"
-        />
+      <div className="flex flex-col justify-center items-center text-center ">
+        <h2 className="italic text-xl py-4 md:text-3xl">
+          enjoy the lentil things
+        </h2>
+        <div className="w-3/4 md:w-1/2 lg:w-1/2 flex-shrink-0">
+          <img
+            src="./store-front.jpg"
+            alt="store front"
+            className="rounded-3xl border-black border-2 max-w-full h-auto"
+          />
+        </div>
       </div>
-      <button className="bg-amber-200 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2 md:mx-0">
+
+      <button className="sm:flex md:hidden bg-amber-200 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2 ">
         Order Now
       </button>
-      
-      <div className="w-3/4 md:w-1/2 md:mr-10 lg:w-1/3 flex-shrink-0">
+
+      <div className="mt-20 w-3/4 md:w-1/2 md:mr-10 lg:w-1/3 flex flex-col justify-center">
         <Slide easing="ease">
           {slideImages.map((each, index) => (
             <div
@@ -40,15 +44,20 @@ const Hero = () => {
               <img
                 src={each}
                 alt="food"
-                className="mx-4 rounded-3xl border-black border-2"
-                style={{ width: "300px", height: "200px", objectFit: "cover" }}
+                className="sm:mx-4 rounded-3xl border-black border-2 md:w-2/3 lg:w-3/4 object-cover"
               />
             </div>
           ))}
         </Slide>
+        <div className="w-full flex justify-center">
+          <button className="hidden sm:hidden md:block lg:block xl:block bg-amber-200 hover:bg-green-500 rounded-full font-light border-black border-2 my-6 w-48 h-14 text-xl">
+            Order Now
+          </button>
+        </div>
+
       </div>
-      
-      
+
+
     </div>
   );
 };

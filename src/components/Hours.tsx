@@ -18,7 +18,7 @@ const Hours = () =>
         <p className="text-xl">104 S Sheppard St</p>
         <p className="text-xl">Richmond, VA 23221</p>
         <a href="https://maps.app.goo.gl/aQe6eJmjQY1zF2dk7" target="_blank">
-          <h1 className="text-2xl bg-amber-200 hover:bg-green-500 rounded-3xl p-3 my-4">
+          <h1 className="text-2xl bg-amber-200 hover:bg-green-500 rounded-3xl p-3 my-4 border-black border-2">
             <FontAwesomeIcon icon={faMap} /> Get Directions <FontAwesomeIcon icon={faMapPin} />
           </h1>
         </a>
