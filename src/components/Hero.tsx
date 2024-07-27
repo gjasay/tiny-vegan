@@ -34,7 +34,7 @@ const Hero = () =>
         Order Now
       </button>
 
-      <div className="mt-20 w-3/4 md:w-1/2 md:mr-10 lg:w-1/3 flex flex-col justify-center">
+      <div className="md:mt-20 lg:mt-20 xl:mt-20 w-3/4 md:w-1/2 md:mr-10 lg:w-1/3 flex flex-col justify-center">
         <Slide easing="ease">
           {slideImages.map((each, index) => (
             <div
