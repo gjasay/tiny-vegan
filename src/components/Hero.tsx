@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="flex flex-col justify-around items-center text-center h-screen bg-cover bg-center py-8 pb-16 md:flex-row md:justify-between md:px-20"
+      className="flex flex-col justify-around items-center text-center h-screen bg-cover bg-center mt-6 py-8 pb-16 md:flex-row md:justify-between md:px-20"
     >
       <h2 className="italic text-xl py-4 rounded-md md:text-3xl">
         enjoy the lentil things
