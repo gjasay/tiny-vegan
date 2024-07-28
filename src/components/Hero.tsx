@@ -28,10 +28,11 @@ const Hero = () => {
           />
         </div>
       </div>
-
-      <button className="sm:flex md:hidden text-black bg-amber-300 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2">
-        Order Now
-      </button>
+      <a href="https://tiny-vegan-108123.square.site">
+        <button className="sm:flex md:hidden text-black bg-amber-300 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2">
+          Order Now
+        </button>
+      </a>
 
       <div className="md:mt-20 lg:mt-20 xl:mt-20 w-3/4 md:w-1/2 md:mr-10 lg:w-1/3 flex flex-col justify-center">
         <Slide easing="ease">
@@ -49,9 +50,11 @@ const Hero = () => {
           ))}
         </Slide>
         <div className="w-full flex justify-center">
-          <button className="hidden sm:hidden md:block lg:block xl:block bg-amber-300 text-black hover:bg-green-500 rounded-full font-light border-black border-2 my-6 w-48 h-14 text-xl">
-            Order Now
-          </button>
+          <a href="https://tiny-vegan-108123.square.site">
+            <button className="hidden sm:hidden md:block lg:block xl:block bg-amber-300 text-black hover:bg-green-500 rounded-full font-light border-black border-2 my-6 w-48 h-14 text-xl">
+              Order Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

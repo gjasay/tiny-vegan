@@ -10,9 +10,6 @@ const Header: React.FC = () =>
 
   const menuAnimation = useSpring({
     transform: isOpen ? "translateX(0%)" : "translateX(100%)",
-    config: {
-      duration: 200,
-    },
   });
 
   return (
@@ -24,7 +21,7 @@ const Header: React.FC = () =>
       </div>
       <animated.ul
         style={menuAnimation}
-        className="fixed top-0 right-0 h-full w-full text-5xl bg-amber-200 shadow-lg flex flex-col justify-around py-4 md:hidden z-20"
+        className="fixed top-0 right-0 h-full w-full text-5xl bg-amber-300 shadow-lg flex flex-col justify-around py-4 md:hidden z-20"
       >
         <div></div>
         <li className="text-center px-4 py-8">
@@ -39,6 +36,15 @@ const Header: React.FC = () =>
         <li className="text-center px-4 py-8">
           <a
             onClick={() => setOpen(!isOpen)}
+            href="#hours"
+            className=" hover:text-green-500"
+          >
+            hours
+          </a>
+        </li>
+        <li className="text-center px-4 py-8">
+          <a
+            onClick={() => setOpen(!isOpen)}
             href="#about"
             className=" hover:text-green-500"
           >
@@ -47,13 +53,13 @@ const Header: React.FC = () =>
         </li>
         <li className="text-center px-4 py-8">
           <a
-            onClick={() => setOpen(!isOpen)}
-            href="#contact"
+            href="https://tiny-vegan-108123.square.site"
             className=" hover:text-green-500"
           >
-            contact
+            order
           </a>
         </li>
+        
         <a href="https://www.instagram.com/tinyveganfoodcart/" target="_blank" rel="noopener noreferrer" className="text-center px-4 py-8 hover:text-green-500">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
@@ -73,6 +79,14 @@ const Header: React.FC = () =>
           </li>
           <li className="h-full flex items-center">
             <a
+              href="#hours"
+              className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
+            >
+              hours
+            </a>
+          </li>
+          <li className="h-full flex items-center">
+            <a
               href="#about"
               className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
             >
@@ -81,11 +95,11 @@ const Header: React.FC = () =>
           </li>
           <li className="h-full flex items-center">
             <a
-              href="#contact"
-              className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
-            >
-              contact
-            </a>
+               href="https://tiny-vegan-108123.square.site"
+                className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
+              >
+                order
+              </a>
           </li>
         </ul>
         <a href="https://www.instagram.com/tinyveganfoodcart/" target="_blank" rel="noopener noreferrer" className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700">
