@@ -59,20 +59,23 @@ function App() {
   });
 
   return (
-    <div className="bg-lime-600 text-white">
+    <div className="bg-lime-600 text-white flex flex-col h-screen">
       <Header />
-      <animated.div ref={heroRef} style={heroAnimation}>
+      <div className="overflow-y-auto flex-1">
+        <animated.div ref={heroRef} style={heroAnimation}>
         <Hero />
-      </animated.div>
-      <animated.div ref={menuRef} style={menuAnimation}>
-        <Menu />
-      </animated.div>
-      <animated.div ref={hoursRef} style={hoursAnimation}>
-        <Hours />
-      </animated.div>
-      <animated.div ref={aboutRef} style={aboutAnimation}>
-        <About />
-      </animated.div>
+        </animated.div>
+        <animated.div ref={menuRef} style={menuAnimation}>
+          <Menu />
+        </animated.div>
+        <animated.div ref={hoursRef} style={hoursAnimation}>
+          <Hours />
+        </animated.div>
+        <animated.div ref={aboutRef} style={aboutAnimation}>
+          <About />
+        </animated.div>
+      </div>
+      
     </div>
   );
 }
