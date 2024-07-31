@@ -38,24 +38,31 @@ function App() {
   const [hoursRef, hoursInView] = useIntersectionObserver();
   const [aboutRef, aboutInView] = useIntersectionObserver();
 
+  const isAnyOtherInView = menuInView || hoursInView || aboutInView;
+  const adjustedHeroInView = heroInView || !isAnyOtherInView;
+
   const heroAnimation = useSpring({
-    opacity: heroInView ? 1 : 0,
-    transform: heroInView ? "translateY(0)" : "translateY(50px)",
+    opacity: adjustedHeroInView ? 1 : 0,
+    transform: adjustedHeroInView ? "translateY(0)" : "translateY(50px)",
+    config: { tension: 200, friction: 20 },
   });
 
   const menuAnimation = useSpring({
     opacity: menuInView ? 1 : 0,
     transform: menuInView ? "translateY(0)" : "translateY(50px)",
+    config: { tension: 200, friction: 20 },
   });
 
   const hoursAnimation = useSpring({
     opacity: hoursInView ? 1 : 0,
     transform: hoursInView ? "translateY(0)" : "translateY(50px)",
+    config: { tension: 200, friction: 20 },
   });
 
   const aboutAnimation = useSpring({
     opacity: aboutInView ? 1 : 0,
     transform: aboutInView ? "translateY(0)" : "translateY(50px)",
+    config: { tension: 200, friction: 20 },
   });
 
   return (
