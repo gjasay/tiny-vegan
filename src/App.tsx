@@ -38,11 +38,10 @@ function App() {
   const [hoursRef, hoursInView] = useIntersectionObserver();
   const [aboutRef, aboutInView] = useIntersectionObserver();
 
-  const isAnyOtherInView = menuInView || hoursInView || aboutInView;
-  const adjustedHeroInView = heroInView || !isAnyOtherInView;
+  const isAnyInView = heroInView || menuInView || hoursInView || aboutInView;
 
   const heroAnimation = useSpring({
-    opacity: adjustedHeroInView ? 1 : 0,
+    opacity: heroInView || !isAnyInView ? 1 : 0,
   });
 
   const menuAnimation = useSpring({
@@ -50,7 +49,7 @@ function App() {
   });
 
   const hoursAnimation = useSpring({
-    opacity: hoursInView ? 1 : 0,
+    opacity: hoursInView || !isAnyInView ? 1 : 0,
   });
 
   const aboutAnimation = useSpring({
@@ -62,7 +61,7 @@ function App() {
       <Header />
       <div className="overflow-y-auto flex-1">
         <animated.div ref={heroRef} style={heroAnimation}>
-        <Hero />
+          <Hero />
         </animated.div>
         <animated.div ref={menuRef} style={menuAnimation}>
           <Menu />
@@ -74,7 +73,6 @@ function App() {
           <About />
         </animated.div>
       </div>
-      
     </div>
   );
 }
