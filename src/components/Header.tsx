@@ -59,7 +59,7 @@ const Header: React.FC = () =>
             order
           </a>
         </li>
-        
+
         <a href="https://www.instagram.com/tinyveganfoodcart/" target="_blank" rel="noopener noreferrer" className="text-center px-4 py-8 hover:text-green-500">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
@@ -95,11 +95,11 @@ const Header: React.FC = () =>
           </li>
           <li className="h-full flex items-center">
             <a
-               href="https://tiny-vegan-108123.square.site"
-                className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
-              >
-                order
-              </a>
+              href="https://tiny-vegan-108123.square.site"
+              className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
+            >
+              order
+            </a>
           </li>
         </ul>
         <a href="https://www.instagram.com/tinyveganfoodcart/" target="_blank" rel="noopener noreferrer" className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700">
