@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Grandstander", "sans-serif"],
+        sans: ["Grandstander","Plus Jakarta Sans", "sans-serif"],
       },
     },
   },
