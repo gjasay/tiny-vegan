@@ -10,7 +10,8 @@ const slideImages = [
   "./food6.jpg",
 ];
 
-const Hero = () => {
+const Hero = () =>
+{
   return (
     <div
       id="hero"
@@ -24,7 +25,8 @@ const Hero = () => {
           <img
             src="./store-front.jpg"
             alt="store front"
-            className="rounded-3xl border-black border-2 max-w-full h-auto"
+            className="rounded-3xl border-black border-2 max-w-full h-auto object-cover"
+            style={{ width: '100%', height: 'auto' }}
           />
         </div>
       </div>
@@ -39,12 +41,14 @@ const Hero = () => {
           {slideImages.map((each, index) => (
             <div
               key={index}
-              className="each-slide flex justify-center items-center"
+              className="each-slide flex justify-center items-center w-full"
+              style={{ position: 'relative', paddingBottom: '100%' }}
             >
               <img
                 src={each}
                 alt="food"
-                className="sm:mx-4 rounded-3xl border-black border-2 md:w-2/3 lg:w-3/4 object-cover"
+                className="rounded-3xl border-black border-2 object-cover w-full h-full"
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
               />
             </div>
           ))}

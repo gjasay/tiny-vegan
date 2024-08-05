@@ -8,7 +8,7 @@ const Menu = () => {
       <img
         src="./menu.jpg"
         alt="menu"
-        className="object-cover w-11/12 md:w-1/3 max-h-full  rounded-lg border-black border-2"
+        className="object-fit w-11/12 md:w-1/3  rounded-lg border-black border-2"
       />
     </div>
   );
