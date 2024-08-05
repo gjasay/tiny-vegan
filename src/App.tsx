@@ -58,8 +58,10 @@ function App() {
 
   return (
     <div className="bg-lime-600 text-white flex flex-col h-screen">
-      <Header />
-      <div className="overflow-y-auto flex-1">
+      <div className="fixed top-0 left-0 right-0 z-50">
+        <Header />
+      </div>
+      <div className="overflow-y-auto flex-1 mt-16"> {/* Adjust margin-top to match header height */}
         <animated.div ref={heroRef} style={heroAnimation}>
           <Hero />
         </animated.div>
