@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Menu from "./components/Menu";
 import Hours from "./components/Hours";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
 function useIntersectionObserver(): [MutableRefObject<null>, boolean] {
   const [inView, setInView] = useState(false);
@@ -74,6 +75,7 @@ function App() {
         <animated.div ref={aboutRef} style={aboutAnimation}>
           <About />
         </animated.div>
+        <Footer />
       </div>
     </div>
   );
