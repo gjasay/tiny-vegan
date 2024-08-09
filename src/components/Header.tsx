@@ -53,7 +53,7 @@ const Header: React.FC = () =>
         </li>
         <li className="text-center px-4 py-8">
           <a
-            href="https://tiny-vegan-108123.square.site"
+            href="https://order.tinyvegantakeout.com/"
             className=" hover:text-green-500"
           >
             order
@@ -95,7 +95,7 @@ const Header: React.FC = () =>
           </li>
           <li className="h-full flex items-center">
             <a
-              href="https://tiny-vegan-108123.square.site"
+              href="https://order.tinyvegantakeout.com/"
               className="h-full flex items-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:text-emerald-700"
             >
               order
