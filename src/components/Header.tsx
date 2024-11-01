@@ -21,11 +21,8 @@ const Header: React.FC = () =>
       </div>
       <animated.ul
         style={menuAnimation}
-        className="fixed top-0 right-0 h-full w-full text-5xl bg-tvGreen shadow-lg flex flex-col justify-around py-4 md:hidden z-20"
+        className="fixed top-0 right-0 h-full w-full text-5xl bg-tvGreen shadow-lg flex flex-col justify-center mt-12 md:hidden z-20"
       >
-        <div></div>
-        <div></div>
-        <div></div>
         <li className="text-center px-4 py-8">
           <a
             onClick={() => setOpen(!isOpen)}
