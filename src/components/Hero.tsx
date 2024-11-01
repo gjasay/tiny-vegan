@@ -26,7 +26,7 @@ const Hero = () =>
 
       </div>
       <div className="flex flex-col justify-center items-center text-center ">
-        <h2 className="italic text-2xl py-6 md:text-3xl">
+        <h2 className="italic font-semibold text-2xl py-6 md:text-3xl">
           enjoy the lentil things
         </h2>
         <div className="w-3/4 flex-shrink-0">
