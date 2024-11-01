@@ -6,6 +6,13 @@ export default {
       fontFamily: {
         sans: ["Grandstander","Plus Jakarta Sans", "sans-serif"],
       },
+      colors: {
+        tvGreen: '#666439',
+        tvFire: '#e65f37',
+        tvLight: '#faf7c3',
+        tvButton: '#4CAF50',
+        tvButtonHover: '#45A049',
+      }
     },
   },
   plugins: [],

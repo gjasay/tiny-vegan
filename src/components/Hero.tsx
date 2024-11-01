@@ -1,3 +1,5 @@
+import { faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 
@@ -8,6 +10,9 @@ const slideImages = [
   "./food4.jpg",
   "./food5.jpg",
   "./food6.jpg",
+  "./food7.jpg",
+  "./food8.jpg",
+  "./food9.jpg",
 ];
 
 const Hero = () =>
@@ -17,27 +22,49 @@ const Hero = () =>
       id="hero"
       className="flex flex-col justify-around items-center text-center min-h-screen bg-cover bg-center pb-16 md:flex-row md:justify-between md:px-20"
     >
-      <div className="flex flex-col justify-center items-center text-center">
-        <h2 className="italic text-xl py-4 md:text-3xl">
+      <div>
+
+      </div>
+      <div className="flex flex-col justify-center items-center text-center ">
+        <h2 className="italic text-2xl py-6 md:text-3xl">
           enjoy the lentil things
         </h2>
-        <div className="w-3/4 md:w-1/2 lg:w-1/2 flex-shrink-0">
+        <div className="w-3/4 flex-shrink-0">
           <img
-            src="./store-front.jpg"
+            src="./store_front.jpeg"
             alt="store front"
-            className="rounded-3xl border-black border-2 max-w-full h-auto object-cover"
+            className="rounded-3xl border-black border-4 max-w-full h-auto object-cover"
             style={{ width: '100%', height: 'auto' }}
           />
         </div>
       </div>
       <a href="https://order.tinyvegantakeout.com/">
-        <button className="sm:flex md:hidden text-black bg-amber-300 hover:bg-green-500 text-2xl py-3 px-5 my-8 rounded-full mx-auto font-light border-black border-2">
-          Order Now
+        <button className="sm:flex md:hidden text-tvLight bg-tvFire hover:bg-tvGreen text-2xl py-3 px-5 my-8 rounded-full mx-auto font-bold border-black border-4">
+          <p> <FontAwesomeIcon icon={faUtensils} /> Order Now <FontAwesomeIcon icon={faUtensils} /> </p>
         </button>
       </a>
 
-      <div className="md:mt-20 lg:mt-20 xl:mt-20 w-3/4 md:w-1/2 md:mr-10 lg:w-1/3 flex flex-col justify-center">
-        <Slide easing="ease">
+      <div className=" w-2/3 md:w-1/3 md:mr-10 lg:w-1/3 flex flex-col justify-center">
+        <div className="w-full flex justify-center">
+          <a href="https://order.tinyvegantakeout.com/">
+            <button className="hidden sm:hidden md:block lg:block xl:block bg-tvFire text-tvLight font-bold hover:bg-tvGreen rounded-full border-black border-4  my-6 w-48 h-14 text-xl">
+              <p> <FontAwesomeIcon icon={faUtensils} /> Order Now <FontAwesomeIcon icon={faUtensils} /> </p>
+            </button>
+          </a>
+        </div>
+        <Slide
+          easing="ease-in"
+          prevArrow={
+            <div className="flex items-center justify-center text-tvLight bg-tvFire hover:bg-tvGreen border-4 border-black rounded-full pt-2 h-12 w-12 text-4xl">
+              {"<"}
+            </div>
+          }
+          nextArrow={
+            <div className="flex items-center justify-center text-tvLight bg-tvFire hover:bg-tvGreen border-4 border-black rounded-full pt-2 h-12 w-12 text-4xl">
+              {">"}
+            </div>
+          }
+        >
           {slideImages.map((each, index) => (
             <div
               key={index}
@@ -47,19 +74,13 @@ const Hero = () =>
               <img
                 src={each}
                 alt="food"
-                className="rounded-3xl border-black border-2 object-cover w-full h-full"
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+                className="rounded-3xl border-black border-4 object-cover"
+                style={{ position: 'absolute', top: "2.5%", left: '2.5%', width: '95%', height: '95%' }}
               />
             </div>
           ))}
         </Slide>
-        <div className="w-full flex justify-center">
-          <a href="https://order.tinyvegantakeout.com/">
-            <button className="hidden sm:hidden md:block lg:block xl:block bg-amber-300 text-black hover:bg-green-500 rounded-full font-light border-black border-2 my-6 w-48 h-14 text-xl">
-              Order Now
-            </button>
-          </a>
-        </div>
+
       </div>
     </div>
   );

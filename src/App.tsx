@@ -7,13 +7,16 @@ import Hours from "./components/Hours";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
-function useIntersectionObserver(): [MutableRefObject<null>, boolean] {
+function useIntersectionObserver(): [MutableRefObject<null>, boolean]
+{
   const [inView, setInView] = useState(false);
   const ref = useRef<null>(null);
 
-  useEffect(() => {
+  useEffect(() =>
+  {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      ([entry]) =>
+      {
         setInView(entry.isIntersecting);
       },
       { threshold: 0.5 },
@@ -23,7 +26,8 @@ function useIntersectionObserver(): [MutableRefObject<null>, boolean] {
       observer.observe(ref.current);
     }
 
-    return () => {
+    return () =>
+    {
       if (ref.current) {
         observer.unobserve(ref.current);
       }
@@ -33,7 +37,8 @@ function useIntersectionObserver(): [MutableRefObject<null>, boolean] {
   return [ref, inView];
 }
 
-function App() {
+function App()
+{
   const [heroRef, heroInView] = useIntersectionObserver();
   const [menuRef, menuInView] = useIntersectionObserver();
   const [hoursRef, hoursInView] = useIntersectionObserver();
@@ -58,11 +63,9 @@ function App() {
   });
 
   return (
-    <div className="bg-lime-600 text-white flex flex-col h-screen">
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <Header />
-      </div>
-      <div className="overflow-y-auto flex-1 mt-16"> {/* Adjust margin-top to match header height */}
+    <div className="bg-tvLight text-black flex flex-col h-screen">
+      <Header />
+      <div className="overflow-y-auto flex-1">
         <animated.div ref={heroRef} style={heroAnimation}>
           <Hero />
         </animated.div>
