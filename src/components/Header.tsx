@@ -12,7 +12,7 @@ const Header: React.FC = () =>
     transform: isOpen ? "translateX(0%)" : "translateX(100%)",
     config: {
       tension: 270,
-      friction: 13,
+      friction: 20,
       mass: 1,
     },
     immediate: false,
