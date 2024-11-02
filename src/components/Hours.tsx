@@ -7,6 +7,8 @@ const Hours = () =>
     <div id="hours" className="py-6 h-screen">
       <h1 className="text-4xl font-bold text-center pb-6">Hours</h1>
       <div className="flex flex-col justify-center items-center">
+        <p className="text-xl">Monday: Closed</p>
+        <p className="text-xl">Tuesday: Closed</p>
         <p className="text-xl">Wednesday: 12pm - 3pm</p>
         <p className="text-xl">Thursday: 9am - 3pm</p>
         <p className="text-xl">Friday: 9am - 3pm</p>

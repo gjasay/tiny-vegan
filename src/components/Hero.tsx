@@ -1,4 +1,4 @@
-import { faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { faAngleLeft, faAngleRight, faUtensils } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -55,13 +55,13 @@ const Hero = () =>
         <Slide
           easing="ease-in"
           prevArrow={
-            <div className="flex items-center justify-center text-tvLight bg-tvFire hover:bg-tvGreen border-4 border-black rounded-full pt-2 h-12 w-12 text-4xl">
-              {"<"}
+            <div className="flex items-center justify-center font-bold text-tvLight bg-tvFire hover:bg-tvGreen border-4 border-black rounded-full h-12 w-12 text-4xl">
+              <FontAwesomeIcon icon={faAngleLeft} />
             </div>
           }
           nextArrow={
-            <div className="flex items-center justify-center text-tvLight bg-tvFire hover:bg-tvGreen border-4 border-black rounded-full pt-2 h-12 w-12 text-4xl">
-              {">"}
+            <div className="flex items-center justify-center font-bold text-tvLight bg-tvFire hover:bg-tvGreen border-4 border-black rounded-full  h-12 w-12 text-4xl">
+              <FontAwesomeIcon icon={faAngleRight} />
             </div>
           }
         >

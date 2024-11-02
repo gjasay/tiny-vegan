@@ -74,7 +74,7 @@ const Header: React.FC = () =>
 
       {/* Desktop */}
       <div className="hidden md:flex justify-between items-center px-6 py-3 w-full h-full">
-        <a href=""><img src="./logo.jpeg" className="w-24" alt="Logo" /></a>
+        <a href=""><img src="./logo.jpeg" className="w-20 transition-transform duration-300 ease-in-out transform hover:scale-110" alt="Logo" /></a>
         <ul className="flex space-x-8 text-3xl h-full">
           <li className="h-full flex items-center">
             <a
