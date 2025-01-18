@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header: React.FC = () =>
 {
+  // a comment
   const [isOpen, setOpen] = useState(false);
 
   const menuAnimation = useSpring({

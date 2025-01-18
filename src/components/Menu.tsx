@@ -4,7 +4,7 @@ const Menu = () => {
       id="menu"
       className="flex flex-col justify-center items-center py-8 h-screen"
     >
-      <h1 className="text-center font-bold text-4xl my-8">Menu</h1>
+      <h1 className="text-center font-bold text-4xl my-4">Menu</h1>
       <div className="flex flex-col md:flex-row justify-center items-center h-full">
         <img
           src="./menu.jpeg"
