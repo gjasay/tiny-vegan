@@ -9,12 +9,7 @@ const Menu = () => {
         <img
           src="./menu.jpeg"
           alt="menu"
-          className="object-fit w-3/5 md:w-1/3  rounded-lg border-black border-4 m-4"
-        />
-        <img
-          src="./tiny_menu.jpeg"
-          alt="menu"
-          className="object-fit w-3/5 md:w-1/3  rounded-lg border-black border-4 m-4"
+          className="object-fit rounded-lg border-black border-4 m-4"
         />
       </div>
     </div>
