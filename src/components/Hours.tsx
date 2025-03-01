@@ -9,11 +9,11 @@ const Hours = () =>
       <div className="flex flex-col justify-center items-center">
         <p className="text-xl">Monday: Closed</p>
         <p className="text-xl">Tuesday: Closed</p>
-        <p className="text-xl">Wednesday: 12pm - 3pm</p>
-        <p className="text-xl">Thursday: 9am - 3pm</p>
-        <p className="text-xl">Friday: 9am - 3pm</p>
-        <p className="text-xl">Saturday: 9am - 3pm</p>
-        <p className="text-xl">Sunday: 9am - 3pm</p>
+        <p className="text-xl">Wednesday: 10am - 3pm</p>
+        <p className="text-xl">Thursday: 10am - 3pm</p>
+        <p className="text-xl">Friday: 10am - 7pm</p>
+        <p className="text-xl">Saturday: 10am - 7pm</p>
+        <p className="text-xl">Sunday: 10am - 3pm</p>
       </div>
       <h1 className="text-4xl font-bold text-center py-6">Address</h1>
       <div className="flex flex-col justify-center items-center">
